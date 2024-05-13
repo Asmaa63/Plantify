@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.contactUsPage{
+  min-height: 100vh;
+  width: 100%;
+  /* background: var(--main-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+}
+.contactUsPage .containerCont {
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 6px;
+    /* padding: 20px 60px 30px 40px; */
+    padding: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .contactUsPage .containerCont .contentCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px 13px;
+    border-radius: 8px;
+  }
+  .contactUsPage .containerCont .contentCont .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    background-color: white;
+  }
+  .contactUsPage .contentCont .left-side::before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .contactUsPage .contentCont .left-side .details {
+    margin: 14px;
+    text-align: center;
+  }
+  .contactUsPage .contentCont .left-side .details i {
+    font-size: 30px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  .contactUsPage .contentCont .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-color);
+  }
+  .contactUsPage  .contentCont .left-side .details .text-one,
+  .contentCont .left-side .details .text-two {
+    font-size: 14px;
+    color: black;
+  }
+  
+  .contactUsPage .containerCont .contentCont .right-side {
+    width: 75%;
+    margin-left: 75px;
+  }
+  .contactUsPage .contentCont .right-side .topic-text {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+  }
+  .contactUsPage .right-side .input-box {
+    height: 55px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .contactUsPage .right-side .input-box input,
+  .contactUsPage .right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .contactUsPage .right-side .input-box input:focus,
+  .contactUsPage .right-side .input-box textarea:focus{
+    border: 1px solid var(--main-color);
+  }
+  .contactUsPage  .right-side .message-box {
+    min-height: 110px;
+  }
+  .contactUsPage  .right-side .input-box textarea {
+    padding-top: 6px;
+  }
+  .contactUsPage .right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .contactUsPage  .right-side .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--main-color);
+    padding: 5px 19px;
+    border-radius: 6px;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contactUsPage .button input[type="button"]:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+  }
+  
+  @media (max-width: 950px) {
+    .contactUsPage .containerCont {
+      width: 90%;
+      padding: 30px 40px 40px 35px;
+    }
+    .contactUsPage .containerCont .contentCont .right-side {
+      width: 75%;
+      margin-left: 55px;
+    }
+  }
+  @media (max-width: 820px) {
+    .contactUsPage .containerCont {
+      margin: 40px 0;
+      height: 100%;
+    }
+    .contactUsPage .containerCont .contentCont {
+      flex-direction: column-reverse;
+    }
+    .contactUsPage .containerCont .contentCont .left-side {
+      width: 100%;
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contactUsPage .containerCont .contentCont .left-side::before {
+      display: none;
+    }
+    .contactUsPage .containerCont .contentCont .right-side {
+      width: 100%;
+      margin-left: 0;
+    }
+  }

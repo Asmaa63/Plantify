@@ -1,0 +1,116 @@
+.About{
+    margin-top: 140px;
+    /* margin-bottom: 30px; */
+    background-color: white;
+    /* background-color: #358D48; */
+    /* background: rgb(130,180,58);
+    background: linear-gradient(90deg, rgba(130,180,58,1) 0%, rgba(53,141,72,1) 50%, rgba(125,252,69,1) 100%); */
+    /* background: rgb(126,195,34);
+    background: linear-gradient(0deg, rgba(126,195,34,1) 0%, rgba(53,141,72,1) 100%); */
+
+    /* background-image: linear-gradient(
+        -45deg, 
+        rgb(127, 238, 136) 0%, 
+        rgb(61, 143, 72) 25%, 
+        rgb(31, 191, 44) 51%, 
+        rgb(49, 108, 34) 100%
+  );  */
+   animation: AnimateBG 20s ease infinite;
+
+    position: relative;
+    z-index: 1;
+}
+.About::before{
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.8s ease;
+}
+.About::after{
+    position: absolute;
+    content: "";
+    right: -30px;
+    top: -30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.8s ease;
+}
+.About-content{
+    /* padding: 70px 30px; */
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.About-img img{
+    width: 290px;
+    height: auto;
+    border-radius: 10px;
+    animation: zoomOutin01 3s linear infinite;
+}
+.about-text{
+    width: 500px;
+    /* color: white; */
+    text-align: center;
+    color: black;
+}
+.about-text h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+/* .about-text p{
+    text-align: left;
+} */
+@keyframes zoomOutin01{
+    0%,100%{
+        transform: scale(1);
+    }
+    90%{
+         transform: scale(0.9);
+    }
+  }
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+  @media only screen and (max-width: 800px) {
+    .About {
+        margin-top: 100px; /* تعديل هام: زيادة الهوامش العلوية */
+        margin-bottom: 50px; /* تعديل هام: تقليل الهوامش السفلية */
+    }
+    .About::before,
+    .About::after {
+        display: none; /* إخفاء العناصر الزائدة */
+    }
+    .About-content {
+        flex-direction: column; /* تغيير اتجاه العناصر إلى عمودي */
+        gap: 20px; /* إضافة مسافة بين العناصر */
+        padding: 30px; /* تقليل الحشو الداخلي */
+    }
+    .About-img img {
+        width: 100%; /* جعل الصورة تأخذ العرض الكامل */
+        max-width: 300px; /* تقليل عرض الصورة */
+        margin-bottom: 20px; /* إضافة مسافة بين الصورة والنص */
+    }
+    .about-text {
+        width: 100%; /* جعل النص يأخذ العرض الكامل */
+        text-align: center; /* محاذاة النص في الوسط */
+    }
+    .about-text h2 {
+        font-size: 36px; /* تقليل حجم العنوان */
+        margin-top: 10px; /* تقليل المسافة بين العنوان والنص */
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan&family=Sevillana&display=swap');
+.plant-display{
+    margin-bottom: 80px;
+    margin-top: 30px;
+
+}
+.plant-display h2{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    /* font-family: "Sevillana", cursive; */
+    margin-top: 20px;
+    font-weight: 800;
+}
+.plant-diplay-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    /* row-gap: 50px; */
+    gap: 50px;
+    text-align: center;
+}
+.plant-btn-show{
+    text-align: center;
+    margin-top: 50px;
+}
+.plant-btn-show .btn-show{
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 2px solid var(--main-color);
+    color: white;
+    background-color: var(--main-color);
+    font-size: 20px;
+    transition: 0.3s;
+    outline: none;
+    text-decoration: none;
+}
+.plant-btn-show .btn-show:hover{
+    color: var(--main-color);
+    background-color: white;
+}

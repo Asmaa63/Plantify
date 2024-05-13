@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sedan&family=Sevillana&display=swap');
+.exploer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 105px;
+}
+.exploer-menu h2{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    /* font-family: "Sevillana", cursive; */
+  }
+  .exploer-menu h2 span{
+    border-bottom: 4px solid var(--main-color);
+  padding-bottom: 5px;
+  }
+  .exploer-menu .exploer-menu-text{
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+ .exploer-menu img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+  }
+  .exploer-menu-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 20px 0;
+    overflow-x: scroll;
+  }
+  .exploer-menu-list-item::-webkit-scrollbar{
+    display: none;
+  }
+  .image p{
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+    margin-top: 7px;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+  }
+  .exploer-menu .image img{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .image img:hover{
+    border: 3px solid var(--main-color);
+    padding: 1px;
+  }
+  .center-hr{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .center-hr hr{
+    margin: 10px 0;
+    border: 1px solid var(--main-color);
+    height: 2px;
+  }
+  .material-symbols-outlined {
+    font-size: 100px;
+    color: var(--main-color);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .exploer-menu {
+        margin-top: 80px; /* تقليل الهوامش العلوية */
+    }
+    .exploer-menu h2 {
+        font-size: 36px; /* تقليل حجم العنوان */
+    }
+    .exploer-menu .exploer-menu-text {
+        width: 90%; /* توسيع النص ليأخذ العرض الكامل */
+    }
+    .exploer-menu img {
+        width: 80px; /* تقليل حجم الصور */
+        height: 80px;
+    }
+    .exploer-menu-list-item {
+        gap: 5px; /* تقليل المسافة بين العناصر */
+        margin: 10px 0; /* تقليل الهوامش */
+        overflow-x: auto; /* إضافة شريط التمرير أفقيًا */
+    }
+    .image p {
+        font-size: 14px; /* تقليل حجم النص */
+    }
+    .exploer-menu .image img {
+        width: 60px; /* تقليل حجم الصور */
+        height: 60px;
+    }
+    .center-hr hr {
+        margin: 5px 0; /* تقليل الهوامش */
+    }
+    .material-symbols-outlined {
+        font-size: 70px; /* تقليل حجم الرموز */
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .exploer-menu-list-item {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+  .exploer-menu {
+      margin-top: 80px;
+  }
+  .exploer-menu h2 {
+      font-size: 30px; 
+  }
+  .exploer-menu .exploer-menu-text {
+      width: 90%;
+      margin: 0 auto; /* توسيع النص ووسطه */
+  }
+  /* .exploer-menu img {
+      width: 100px; 
+      height: 100px;
+  } */
+  .exploer-menu-list-item {
+      gap: 5px; /* تقليل المسافة بين العناصر */
+      margin: 10px 0;
+      overflow-x: auto;
+  }
+  .image p {
+      font-size: 15px; /* تقليل حجم النص */
+  }
+  .exploer-menu .image img {
+      width: 70px; /* تقليل حجم الصور */
+      height: 70px;
+  }
+  .center-hr hr {
+      margin: 5px 0;
+  }
+  .material-symbols-outlined {
+      font-size: 60px; /* تقليل حجم الرموز */
+  }
+}
+

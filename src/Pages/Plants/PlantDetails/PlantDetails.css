@@ -1,0 +1,80 @@
+.PlantDetails{
+    margin-top: 90px;
+}
+.PlantDetailsCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    max-width: 90%;
+    gap: 80px;
+}
+.plantdetails-img img{
+    width: 340px;
+    height: 390px;
+    border-radius: 5px;
+}
+.plantdetails-text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.plantdetails-text h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.plantdetails-text p{
+    font-size: 15px;
+}
+.plantdetails-text .grow{
+    font-size: 17px;
+}
+.plantdetails-text .grow span{
+    font-size: 20px;
+}
+.plantdetails-text .btn{
+    padding:10px 40px ;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    border-color: var(--main-color);
+    text-decoration: none;
+    outline: none;
+}
+.plantdetails-text .btn:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+@media only screen and (max-width: 900px) {
+    .PlantDetails {
+        margin-top: 50px;
+    }
+    .PlantDetailsCard {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+    .plantdetails-img img {
+        width: 100%;
+        max-width: 260px;
+        height: 320px;
+    }
+    .plantdetails-text h1 {
+        font-size: 35px;
+    }
+    .plantdetails-text h3 {
+        font-size: 25px;
+    }
+    .plantdetails-text p {
+        font-size: 14px;
+    }
+    .plantdetails-text .grow {
+        font-size: 16px;
+    }
+    .plantdetails-text .grow span {
+        font-size: 18px;
+    }
+    .plantdetails-text .btn {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,65 @@
+.PlantItem{
+    width: 250px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadein 6s;
+    text-align: center;
+    height: 370px;
+}
+.Plant-item-img{
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0px 0px;
+}
+.plant-item-icon{
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.plant-item-icon span{
+    font-size: 30px;
+    color: #66b8d3;
+    margin-right: 10px;
+    transition: 0.3s;
+    border: 2px solid #f1f3f4;
+    padding: 5px;
+    border-radius: 50%;
+}
+.plant-item-icon span:hover{
+    border-color: #dde0db;
+    color:  #4b91a8;
+}
+.plant-item-icon .sun{
+    color: #eddd6f;
+}
+.plant-item-icon .sun:hover{
+    color: #d8c754;
+}
+.plant-item-icon .green{
+    color: rgb(78, 243, 78);
+}
+.plant-item-icon .green:hover{
+    color: rgb(62, 211, 62);
+}
+.plant-item-icon .lap{
+    color: rgb(70, 225, 225);
+}
+.plant-item-icon .lap{
+    color: rgb(70, 225, 225);
+}
+.plant-item-info-rating h3{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.plant-item-info-rating p{
+    font-size: 15px;
+    color: rgb(27, 25, 25);
+}
+.plant-item-info{
+    padding: 10px;
+}
