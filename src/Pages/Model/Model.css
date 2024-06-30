@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    animation: fadein 4s;
 }
 .containerModel {
     max-width: 1000px;

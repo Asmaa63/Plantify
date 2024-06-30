@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 105px;
+    animation: fadein 4s;
 }
 .exploer-menu h2{
     font-size: 50px;

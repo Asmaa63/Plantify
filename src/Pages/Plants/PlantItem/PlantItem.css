@@ -1,5 +1,5 @@
 .PlantItem{
-    width: 250px;
+    width: 270px;
     margin: auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000015;
@@ -53,7 +53,7 @@
     color: rgb(70, 225, 225);
 }
 .plant-item-info-rating h3{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 5px;
 }
 .plant-item-info-rating p{

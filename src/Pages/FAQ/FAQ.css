@@ -6,6 +6,7 @@
   /* background: var(--main-color); */
   padding: 2px 40px;
   margin-top: 40px;
+  animation: fadein 4s;
 }
 .accordion{
     display: flex;

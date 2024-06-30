@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
             <div className="Home-text">
                 <h1 data-text="Welcome To Plantify"> Welcome<br></br> To <br></br>Plantify</h1>
                 <div className="home-btton">
+                  <Link to="/Getstart">
                 <button className='btn'> <span></span>Get Started</button>
+                </Link>
                 </div>
             </div>
             <div className="Home-img">

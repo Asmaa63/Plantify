@@ -12,12 +12,12 @@
     align-items: center;
     gap:50px;
     padding: 0 10px;
+    justify-content: center;
 }
 .Home-text,.Home-img{
     animation: fadein 4s;
     margin: auto;
 }
-
 
 .Home-text{
     width: 50%;
@@ -25,7 +25,7 @@
 
 .Home-text h1{
     position: relative;
-    font-size: 70px;
+    font-size: 80px;
     background: -webkit-linear-gradient(15deg, #101010, #6CC51D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,7 +118,7 @@
     padding: 15px 70px ;
     position: relative;
     border-radius: 50%;
-    background: -webkit-linear-gradient(15deg, #f7f7f7, #f2f4f2);
+    /* background: -webkit-linear-gradient(15deg, #f7f7f7, #f2f4f2); */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .home-content-span{
@@ -204,39 +204,41 @@
   @media only screen and (max-width: 750px) {
     .Home-row {
         flex-direction: column;
-        gap: 30px; /* قم بتغيير الفارق إلى قيمة إيجابية */
+        gap: 30px; 
     }
-    /* .Home-text, .Home-img {
-        width: 100%; لن نحتاج لهذا النمط حاليًا */
     
     .Home-text h1 {
-        font-size: 60px;
+        font-size: 80px;
+        left: -110px;
     }
     .Home-text .btn {
         padding: 8px 20px;
+    }
+    .Home-text{
+        width: 70%; 
     }
     
 }
 @media (max-width: 900px) {
     .Home-text{
-        width: 45%; /* قم بتعديل العرض إلى النسبة المناسبة */
+        width: 60%; 
     }
     .Home-text h1 {
-        font-size: 65px;
+        font-size: 60px;
     }
     .Home-text .btn {
         padding: 10px 30px;
     }
     .Home-img img {
-        width: 220px;
+        width: 200px;
     }
 }
 @media (max-width: 800px){
     .Home-text{
-        width: 40%; /* قم بتعديل العرض إلى النسبة المناسبة */
+        width: 30%;
     }
     .Home-text h1 {
-        font-size: 60px;
+        font-size: 75px;
     }
     .Home-img img {
         width: 200px;

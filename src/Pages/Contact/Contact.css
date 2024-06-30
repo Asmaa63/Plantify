@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 .contactUsPage{
   min-height: 100vh;
   width: 100%;
@@ -6,8 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
   margin-top: 50px;
+  animation: fadein 4s;
+  font-family: "Lato", sans-serif;
 }
 .contactUsPage .containerCont {
     max-width: 1100px;
@@ -74,6 +75,7 @@
     font-size: 30px;
     font-weight: 600;
     color: var(--main-color);
+    text-transform: capitalize;
   }
   .contactUsPage .right-side .input-box {
     height: 55px;
@@ -106,7 +108,7 @@
     display: inline-block;
     margin-top: 12px;
   }
-  .contactUsPage  .right-side .button input[type="button"] {
+  .contactUsPage  .right-side .button input[type="submit"] {
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -117,11 +119,40 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .contactUsPage .button input[type="button"]:hover {
+  .contactUsPage .button input[type="submit"]:hover {
     background-color: white;
     color: var(--main-color);
     border: 2px solid var(--main-color);
   }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
   
   @media (max-width: 950px) {
     .contactUsPage .containerCont {

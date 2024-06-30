@@ -1,6 +1,7 @@
 .DownloadApp{
     margin-top: 30px;
     margin-bottom: 40px;
+    animation: fadein 4s;
     
 }
 .DowloadApp-header{

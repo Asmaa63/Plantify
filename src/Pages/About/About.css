@@ -7,7 +7,6 @@
     background: linear-gradient(90deg, rgba(130,180,58,1) 0%, rgba(53,141,72,1) 50%, rgba(125,252,69,1) 100%); */
     /* background: rgb(126,195,34);
     background: linear-gradient(0deg, rgba(126,195,34,1) 0%, rgba(53,141,72,1) 100%); */
-
     /* background-image: linear-gradient(
         -45deg, 
         rgb(127, 238, 136) 0%, 
@@ -15,10 +14,10 @@
         rgb(31, 191, 44) 51%, 
         rgb(49, 108, 34) 100%
   );  */
-   animation: AnimateBG 20s ease infinite;
-
+   /* animation: AnimateBG 20s ease infinite; */
     position: relative;
     z-index: 1;
+    animation: fadein 4s;
 }
 .About::before{
     position: absolute;

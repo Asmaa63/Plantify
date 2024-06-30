@@ -9,6 +9,10 @@ const NavbarPage = () => {
     setIsOpen(!isOpen);
   };
 
+  const refreshPage = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className='Navbar'>
       <div className="Navbar-page">
@@ -19,8 +23,10 @@ const NavbarPage = () => {
             <span className="fas fa-bars"></span>
           )}
         </div>
-        <div className="logo">
-          <img src={require("../Navbar/logo.png")} alt='logo' className='Img-Logo' />
+        <div className="logo" onClick={refreshPage}>
+          <Link to="/">
+            <img src={require("./logo.png")} alt='logo' className='Img-Logo' />
+          </Link>
         </div>
         <ul className={`Navbar-menu nav-items ${isOpen ? 'active' : ''}`}>
           <li>
@@ -30,7 +36,7 @@ const NavbarPage = () => {
                 <i className="fa-solid fa-house"></i>
               </div>
               <div className="nav-text">
-                <span data-text="Home"> Home </span>
+                <span data-text="Home" onClick={refreshPage}> Home </span>
               </div>
             </Link>
           </li>
@@ -90,20 +96,20 @@ const NavbarPage = () => {
             </Link>
           </li>
           <li>
-        <Link id='link' to="/FAQ">
-          <div className="nav-icon">
-          <i class="fa-solid fa-circle-question"></i>
-          <i class="fa-solid fa-circle-question"></i>
-          </div>
-          <div className="nav-text">
-            <span data-text="Contact Us"> FAQ </span>
-          </div>
-        </Link>
-      </li>
+            <Link id='link' to="/FAQ">
+              <div className="nav-icon">
+                <i className="fa-solid fa-circle-question"></i>
+                <i className="fa-solid fa-circle-question"></i>
+              </div>
+              <div className="nav-text">
+                <span data-text="FAQ"> FAQ </span>
+              </div>
+            </Link>
+          </li>
         </ul>
-        <div className="navber-right">
+        {/* <div className="navber-right">
           <Link to="/login" className="button">Sign In</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,7 +1,18 @@
 .footer-page{
     background-color:var(--main-color);
-    color: black;
+    color: #ffffff;
     margin: 0;
+}
+.footer-page::before{
+    position: absolute;
+    content: "";
+    left: -0px;
+    top: -0px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.8s ease;
 }
 .footer-content{
     padding: 20px 20px 8px 20px ;

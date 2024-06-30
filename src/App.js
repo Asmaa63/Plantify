@@ -1,10 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'owl.carousel/dist/owl.carousel';
-import Navbar from './Components/Navbar/Navbar';
-import AllPlants from './Pages/ViewAllPlants/AllPlants/AllPlants';
 import Home from './Pages/Home/Home';
-import ViwePlants from './Pages/ViewAllPlants/ViewPlants/ViewPlants';
 import Menu from './Pages/Menu/Menu';
 import Plant from './Pages/Plants/Plant/Plant';
 import ScreenShot from './Pages/ScreenShot/ScreenShot';
@@ -15,7 +12,6 @@ import PlantDetails from './Pages/Plants/PlantDetails/PlantDetails';
 import Scroll from './Components/Scroll/Scroll';
 import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
-import Login from './Components/Login/Login';
 import LoginPage from './Components/LoginPage/LoginPage';
 import NavbarPage from './Components/NavbarPage/NavbarPage';
 import FAQ from './Pages/FAQ/FAQ';
@@ -66,6 +62,7 @@ function App() {
         <Route path='/FAQ' element={<FAQ></FAQ>}></Route>
         <Route path='/ContactUs' element={<Contact></Contact>}></Route>
         <Route path='/Model' element={<Model></Model>}></Route>
+        <Route path='/Getstart' element={<DownloadApp></DownloadApp>}></Route>
       </Routes>
       {/* <Footer></Footer> */}
     </div>

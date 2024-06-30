@@ -11,7 +11,6 @@ const PlantDetails = () => {
   useEffect(() => {
     const fetchPlantDetails = async () => {
       try {
-        // استخدام الـ id الممرر لجلب التفاصيل المناسبة من الـ API
         const response = await fetch(`https://perenual.com/api/species/details/${id}?key=sk-QZsh66399c5511a8b5371`);
         const data = await response.json();
         setPlantDetails(data);

@@ -1,6 +1,7 @@
 .ScreenShot{
   margin-bottom: 100px;
   margin-top: 100px;
+  animation: fadein 4s;
 }
 .ScreenShot h2{
   margin-bottom: 30px;

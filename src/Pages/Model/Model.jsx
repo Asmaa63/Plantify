@@ -35,36 +35,39 @@ const Model = () => {
           <div class="home text">
             <div class="title">Model Name</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi excepturi ducimus sequi dignissimos expedita tempore omnis quos cum, possimus, aspernatur esse nihil commodi est maiores dolorum rem iusto atque, beatae voluptas sit eligendi architecto dolorem temporibus. Non magnam ipsam, voluptas quasi nam dicta ut. Ad corrupti aliquid obcaecati alias, nemo veritatis porro nisi eius
-              sequi dignissimos ea repellendus quibusdam minima ipsum animi quae, libero quisquam a! Laudantium iste est sapiente, ullam itaque odio iure laborum voluptatem quaerat tempore doloremque quam modi, atque minima enim saepe! Dolorem rerum minima incidunt, officia!
+              Rexnet 150
             </p>
           </div>
           <div class="func text">
             <div class="title">Model Functionality</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora, unde reprehenderit incidunt excepturi blanditiis ullam dignissimos provident quam? Fugit, enim! Architecto ad officiis dignissimos ex quae iusto amet pariatur, ea eius aut velit, tempora magnam hic autem maiores unde corrupti tenetur delectus! Voluptatum praesentium labore consectetur ea qui illum illo
-              distinctio, sunt, ipsam rerum optio quibusdam cum a? Aut facilis non fuga molestiae voluptatem omnis reprehenderit, dignissimos commodi repellat sapiente natus ipsam, ipsa distinctio. Ducimus repudiandae fuga aliquid, numquam.
+            The model is designed for plant disease classification using images of crop leaves. It distinguishes between healthy and diseased leaves and identifies the specific disease affecting the plant. The model leverages the RexNet-150 architecture, optimized for high accuracy in image classification tasks.
             </p>
           </div>
           <div class="feat text">
             <div class="title">Model Features</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores error neque, officia excepturi dolores quis dolor, architecto iusto deleniti a soluta nostrum. Fuga reiciendis beatae, dicta voluptatem, vitae eligendi maxime accusamus. Amet totam aut odio velit cumque autem neque sequi provident mollitia, nisi sunt maiores facilis debitis in officiis asperiores saepe quo soluta
-              laudantium ad non quisquam! Repellendus culpa necessitatibus aliquam quod mollitia perspiciatis ducimus doloribus perferendis autem, omnis, impedit, veniam qui dolorem? Ipsam nihil assumenda, sit ratione blanditiis eius aliquam libero iusto, dolorum aut perferendis modi laboriosam sint dolor.
+            RexNet Architecture: Utilizes residual blocks for improved gradient flow, preventing overfitting, and addressing the vanishing gradient problem.
+            GPU Utilization: Employs GPUs for efficient processing of large datasets, enhancing training speed and capability to handle complex models.
+            Data Handling: Utilizes PyTorch's torchvision.datasets.ImageFolder for loading and managing image datasets.
+            </p>
+            <p>
+            Training Mechanisms: Implements functions for training and validation, including training_step, validation_step, validation_epoch_end, and epoch_end. It also uses advanced techniques like learning rate scheduling and gradient clipping.
             </p>
           </div>
           <div class="accu text">
             <div class="title">Model Accuracy</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magnam vitae inventore blanditiis nam tenetur voluptates doloribus error atque reprehenderit, necessitatibus minima incidunt a eius corrupti placeat, quasi similique deserunt, harum? Quia ut impedit ab earum expedita soluta repellat perferendis hic tempora inventore, accusantium porro consequuntur quisquam et assumenda
-              distinctio dignissimos doloremque enim nemo delectus deserunt! Ullam perspiciatis quae aliquid animi quam amet deleniti, at dolorum tenetur, tempore laborum.
+            Training Accuracy: Achieved an accuracy of 97.6% after 10 epochs.
+            Validation Accuracy: Reached 95.1% after 10 epochs.
+            Test Accuracy: The model demonstrated an impressive accuracy of 95.3% on test data, indicating strong performance and generalization capability.
             </p>
           </div>
           <div class="refe text">
             <div class="title">Model References</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus incidunt possimus quas ad, sit nam veniam illo ullam sapiente, aspernatur fugiat atque. Laboriosam libero voluptatum molestiae veniam earum quisquam, laudantium aperiam, eligendi dicta animi maxime sunt non nisi, ex, ipsa! Soluta ex, quibusdam voluptatem distinctio asperiores recusandae veritatis optio dolorem
-              illo nesciunt quos ullam, dicta numquam ipsam cumque sed. Blanditiis omnis placeat, enim sit dicta eligendi voluptatibus laborum consectetur repudiandae tempora numquam molestiae rerum mollitia nemo. Velit perspiciatis, nesciunt, quo illo quas error debitis molestiae et sapiente neque tempore natus?
+            Kaggle Notebook: The details and implementation of the model can be found in the Kaggle notebook: Plant Diseases Classification using PyTorch.
+            PyTorch Documentation: Refer to PyTorch's official documentation for further understanding of the torchvision.datasets and RexNet architecture.
             </p>
           </div>
         </div>
